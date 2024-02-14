@@ -610,7 +610,7 @@ inject = function()
     os.exit()
 end
 
-local ver = httpGet("https://raw.githubusercontent.com/InfernusScripts/Vulkan/main/Version")
+local ver = httpGet("https://github.com/Roman34296589/source.lua/blob/main/Version.txt")
 if ver then
     ver = ver:gsub("\10",""):gsub(" ",""):gsub("\13","")
 elseif not ver or isEmptyString(ver) then
