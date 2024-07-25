@@ -115,8 +115,8 @@ local N = game:GetService("VirtualInputManager")
 
 local Window = Fluent:CreateWindow({
     
-    Title = "SnapSanix Hub Murder Mystery 2 Support Solara",
-    SubTitle = "by SnapSan",
+    Title = "SnapSanix Hub Murder Mystery 2",
+    SubTitle = "For Mobile Executors",
     TabWidth = 160,
     Size = UDim2.fromOffset(580, 460),
     Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
