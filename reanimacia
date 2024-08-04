@@ -43,7 +43,7 @@ Menu button hidden when there's only 1 menu
 
 _G.J2DEBUG = false
 
-local eventlistener = loadstring(game:HttpGet('https://raw.githubusercontent.com/topitbopit/rblx/main/rbxevent.lua'))()
+
 
 local plrs = game:GetService("Players")
 local ts = game:GetService("TweenService")
@@ -317,23 +317,6 @@ ui = {} do
  end
  end
  end)
- 
- ui.OnReady = eventlistener.new()
- ui.OnNotifDelete = eventlistener.new() 
- ui.NotifCount = -1
- 
- ui.Version = "2.1.7.0"
- ui.Font = Enum.Font["SourceSans"]
- ui.FontSize = 20
- 
- ui.WindowCount = 0
- ui.Windows = {}
- 
- ui.Exiting = eventlistener.new()
- 
- ui.Toggles = {}
- 
- ui.eventlistener = eventlistener
  
  ui.TooltipX = 15
  ui.TooltipY = 8
@@ -622,8 +605,6 @@ ui = {} do
  
  local wind_menus = {}
  local sidemenu_buttons = {}
- local menu_added = eventlistener.new()
- local OnMinimize = eventlistener.new()
  local Minimized = false
  local SidemenuOpen = false
  
@@ -1086,7 +1067,6 @@ ui = {} do
  showtitle = (showtitle == nil and true) or showtitle
  local menu_objects = {}
  
- local OnChildAdded = eventlistener.new()
  
  local menu_menu = Instance.new("ScrollingFrame")
  menu_menu.BackgroundTransparency = 1
@@ -1391,10 +1371,6 @@ ui = {} do
  local toggle_state = state
  local hidden = false
  
- local OnEnable = eventlistener.new()
- local OnToggle = eventlistener.new()
- local OnDisable = eventlistener.new()
- 
  local mousingover = false
  local tooltip = nil
  
@@ -1689,7 +1665,7 @@ ui = {} do
  function m:NewButton(text)
  text = text or getrand(7)
  
- local OnClick = eventlistener.new()
+
  local hidden = false
  local mousingover = false
  local tooltip = nil
@@ -1901,9 +1877,6 @@ ui = {} do
  text = text or getrand(7)
  clear = (clear == nil or false)
  
- local OnFocusLost = eventlistener.new()
- local OnFocusGained = eventlistener.new()
- 
  local mousingover = false
  local tooltip = nil
  
@@ -2060,11 +2033,8 @@ ui = {} do
  end
 
  start = math.clamp(start,min,max)
- 
- 
- local OnValueChanged = eventlistener.new()
- local OnFocusLost = eventlistener.new()
- local OnFocusGained = eventlistener.new()
+
+
  local Focused = false
  local SlowDragging = false
  local FastDragging = false
@@ -2419,13 +2389,7 @@ ui = {} do
  local options_buttons = {}
  local open_state = false
  local selection = {options[1],1}
- 
- local OnSelection = eventlistener.new()
- local OnOpen = eventlistener.new()
- local OnClose = eventlistener.new()
- local OnToggle = eventlistener.new()
- local OnOptionAdded = eventlistener.new()
- local OnOptionRemoved = eventlistener.new()
+
  
  local mousingover = false
  local tooltip = nil
@@ -3110,7 +3074,7 @@ ui = {} do
  msg_AddY = msg_AddY or 0
  msg_AddX = msg_AddX or 0
  
- local OnClose = eventlistener.new()
+
  
  local sizex,sizey = 150 + (#msg_buttons*10) + msg_AddX,100 + ((ulen(msg_desc))) + msg_AddY
  
